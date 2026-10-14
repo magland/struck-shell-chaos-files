@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ducceschi &amp; Touz&eacute; 2015 strikes: listening</title>
+<style>
+:root { color-scheme: light dark; --bg: #fff; --fg: #222; --muted: #666; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1b1b1b; --fg: #e8e8e8; --muted: #aaa; } }
+body { background: var(--bg); color: var(--fg); font: 15px/1.45 system-ui, sans-serif; margin: 24px 16px; max-width: 1000px; }
+p { color: var(--muted); } table { border-collapse: collapse; }
+td, th { padding: 6px 12px 6px 0; vertical-align: middle; text-align: left; font-weight: normal; }
+th { color: var(--muted); font-size: 13px; } td:first-child { max-width: 220px; }
+audio { width: 260px; max-width: 28vw; }
+</style></head><body>
+<h1>Ducceschi &amp; Touz&eacute; (2015) strikes: listening</h1>
+<p>Report 01 of the struck-shell-chaos project. Velocity at the paper's output point (r = 0.896 a, &theta; = 0.519),
+the quantity in the authors' files, from the start of the strike. Rows: the authors' file (played from their companion
+page, M. Ducceschi and C. Touz&eacute;, J. Sound Vib. 344:313, 2015); the paper's own method as we reimplemented it
+(modal, 1000 transverse and the 60 lowest in-plane modes, damping 2 c<sub>p</sub>), which reproduces the authors'
+onsets sample by sample; and cymsim (finite elements, float64). The last column is cymsim's radiated pressure at its
+listener, for interest; it is not comparable to the others. Every file is normalised to its own peak, so loudness is
+not comparable.</p>
+<h2>Cymbal: a = 0.2 m, h = 0.5 mm, 120 N</h2><table><tr><th></th><th>paper's method</th><th>cymsim</th><th>cymsim, radiated sound</th></tr><tr><td>authors (Ducceschi &amp; Touz&eacute;)</td><td><audio controls preload="none" src="https://perso.ensta.fr/~touze/WAV/cymbcirc_f120N_N1000_SR80.wav#t=0.098"></audio></td><td></td><td></td></tr><tr><td>T_wid = 2 ms (4 ms pulse), as the authors&#x27; file shows</td><td><audio controls preload="none" src="audio/cymbal120_4ms_modal-a006408bd48a.wav"></audio></td><td><audio controls preload="none" src="audio/cymbal120_4ms_cymsim-3bb446ef85ae.wav"></audio></td><td><audio controls preload="none" src="audio/cymbal120_4ms_radiated-204949087d85.wav"></audio></td></tr><tr><td>T_wid = 1 ms (2 ms pulse), as stated in the paper</td><td><audio controls preload="none" src="audio/cymbal120_modal-dea133c5b428.wav"></audio></td><td><audio controls preload="none" src="audio/cymbal120_cymsim-8a66a4f11216.wav"></audio></td><td><audio controls preload="none" src="audio/cymbal120_radiated-6226b159a2df.wav"></audio></td></tr><tr><td>240 N, T_wid = 1 ms (cymsim only)</td><td></td><td><audio controls preload="none" src="audio/cymbal240_cymsim-643ad1d9af71.wav"></audio></td><td><audio controls preload="none" src="audio/cymbal240_radiated-5bb9e0233291.wav"></audio></td></tr></table><h2>Gong: a = 0.4 m, h = 1 mm, 80 N, T_wid = 6 ms</h2><table><tr><th></th><th>paper's method</th><th>cymsim</th><th>cymsim, radiated sound</th></tr><tr><td>authors (Ducceschi &amp; Touz&eacute;)</td><td><audio controls preload="none" src="https://perso.ensta.fr/~touze/WAV/gcirc_f80N_N1000_SR40.wav#t=0.094"></audio></td><td></td><td></td></tr><tr><td>gong80</td><td><audio controls preload="none" src="audio/gong80_modal-dffc6eea2a17.wav"></audio></td><td><audio controls preload="none" src="audio/gong80_cymsim-ecafef2699eb.wav"></audio></td><td><audio controls preload="none" src="audio/gong80_radiated-979135228db7.wav"></audio></td></tr></table><h2>Gong: a = 0.4 m, h = 1 mm, 40 N, T_wid = 6 ms</h2><table><tr><th></th><th>paper's method</th><th>cymsim</th><th>cymsim, radiated sound</th></tr><tr><td>authors (Ducceschi &amp; Touz&eacute;)</td><td><audio controls preload="none" src="https://perso.ensta.fr/~touze/WAV/gcirc_f40N_N1000_SR40.wav#t=0.094"></audio></td><td></td><td></td></tr><tr><td>gong40</td><td><audio controls preload="none" src="audio/gong40_modal-6ac96be61f5a.wav"></audio></td><td><audio controls preload="none" src="audio/gong40_cymsim-5a94d7d2b78e.wav"></audio></td><td><audio controls preload="none" src="audio/gong40_radiated-3c63ae51b712.wav"></audio></td></tr></table>
+</body></html>
